@@ -1,0 +1,160 @@
+.container{
+   
+
+}
+
+.sidebar_ikut  {
+	position:fixed;
+	left:0;top:0;right:0;
+	height:60px;
+	visibility:visible;
+	background-color:#353d47;
+	opacity: ; /*la deje vacia para quitarla la opacidad y poder posicionarla sobre las demas con el fixed*/
+	color:#ffffff;
+	font-size:13pt;
+	font-family:calibri;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+	z-index: 99; /*lo cambie a 99 para posicionar esta barra sobre las demas*/
+}/* fondo de la barra de arriba la uso para darle fondo a donde esta el logo y el menu de navegacion */
+
+
+.sidebar2_ikut {
+	position:fixed;
+	left:70px;top:0;right:0;
+	height:40px;
+	width: 100px;
+	visibility:visible;
+	background-color:#353d47;
+	color:#ffffff;
+	font-size:25pt;
+	font-family:calibri;
+	z-index: 4;
+	padding-top: 13px;
+}/* Esta es la capa donde voy a colocar el nombre y el logo */
+.sidebar2logo_ikut {
+	position:fixed;
+	left:25px;top:10;right:0;
+	height:50px;
+	width: 125px;
+	visibility:visible;
+	background-color:#353d47;
+	color:#ffffff;
+	font-size:38pt;
+	font-family:calibri;
+	z-index: 4;
+}/*capa donde se coloca el logo */
+
+.sidebar3_ikut {
+	position:fixed;
+	left:689px;top:19px;right:24px;
+	height:10px;
+	visibility:visible;
+	background-color:#353d47;
+	color:#ffffff;
+	font-size:12pt;
+	font-family:calibri;
+	z-index: 3;
+}/*barra donde va ir el menu de navegacion de la parte de arriba */
+
+.sidebar4_ikut  {
+	position:fixed;
+	left:60;top:90;right:60;
+	height:500px;
+	visibility:visible;
+	background-color:#EEEEEE;
+	opacity: ; /*la deje vacia para quitarla la opacidad y poder posicionarla sobre las demas con el fixed*/
+	color:#ffffff;
+	font-size:13pt;
+	font-family:calibri;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+	z-index: 99; /*lo cambie a 99 para posicionar esta barra sobre las demas*/
+}
+
+#navi {  
+	list-style:none;
+	margin:0;
+	margin-left: 69px;
+	padding:0;
+}/*para quitar la viñeta de la lista desordenada de la barra de navegacion*/
+
+#navi li {
+	margin:2px;
+	padding:6px;
+	padding-left: 19px;
+	padding-right: 19px;
+	border:0px solid#CCCCCC;
+	float: left;
+	display: inline;
+}/*para agregar bordes margenes y colocar la lista desordenada en horizontal*/
+
+
+.foto_desiggeek {
+	position:absolute;
+	left:0;top:0px;right:0;
+	height:12px;
+	visibility:visible;
+	color:#ffffff;
+	font-size:13pt;
+	font-family:calibri;
+	z-index: 1;
+	opacity: 0.9;	
+} /*esta es la foto */
+
+.text_imagen {
+	 position:absolute;
+	 left:0;top:100px;right:0;
+	 visibility:visible;
+	 z-index: 7;
+     color:#000000;
+     font-size:18pt;
+     font-weight: bold;
+     font-family:calibri;
+    
+
+}/*texto sobre la imagen*/
+
+.capa_sobre_img {
+	position:absolute;
+	left:0;top:90px;right:0;
+	height:710px;
+	visibility:visible;
+	background-color:#000000;
+	opacity: 0.2;
+	z-index: 6;
+}/*para sombrear la imagen y colocar el texto en blanco para que se vea*/
+
+.fondo_textos {
+	position:absolute;
+	left:213px;top:1199px;right:213px;
+	color:#000000;
+	font-size:12pt;
+	font-family:calibri;
+	text-align:justify;
+	font-weight:bold;
+	line-height:24px;
+}/*solo sirve para colocar un formato a cualquier texto y lo introduce en la posicion que tu le definas*/  
+
+.prueba {
+	position:absolute;
+	left:213px;top:1399px;right:213px;
+
+}
+.tablagen{
+  color: #000000;	
+  display: table;
+}
+.fila{
+	color: #000000;
+  display: table-row;
+}
+.col{
+	color: #000000;
+  display: table-cell;
+  padding: 12px;
+  background: #ddd;
+}
+
+
+
+
+

@@ -1,0 +1,65 @@
+.est_form { /*esta es la clase que le cambia el color a todo el formulario */
+	position:absolute;
+	left:32%;top:25%;right:24%;
+	height:799px;
+	visibility:visible;
+	background-color:#fafafa;
+	opacity: ; /*la deje vacia para quitarla la opacidad y poder posicionarla sobre las demas con el fixed*/
+	color:#607D8B;
+	font-size:12pt;
+	font-family:calibri;
+	z-index: 1; /*lo cambie a 99 para posicionar esta barra sobre las demas*/
+}
+
+input { /*esta es la clase que le da forma a los tipo text del formulario deberia crear una para los textarea*/
+   	 border-width: 1px;
+	 border-style: solid;
+	 font-size:11pt; 
+	 height: 22px;
+	 border-color: #E0E0E0;
+	 background-color: #ECEFF1;
+	 margin-left: 2px;
+	 border-radius: 2px;
+	}
+
+textarea {
+	 border-width: 1px;
+	 border-style: solid;
+	 font-size:11pt;
+	 border-color: #E0E0E0;
+	 background-color: #ECEFF1;
+	 margin-left: 2px;
+	 font-family:calibri;
+	 color:#607D8B;
+	 width: 440px;
+	 border-radius: 2px;
+	}
+
+select { 
+	font-family: calibri; 
+	font-size: 13px;
+	width: 440px;
+	height: 28px;
+	color: #607D8B; 
+	background-color:#ECEFF1;
+	border-color: #E0E0E0;
+	margin-left: 2px;
+	border-width: 1px;
+	 border-style: solid;
+	 border-radius: 2px;
+}	
+
+label {
+	display: block;
+}
+
+option {
+	font-family: calibri; 
+	font-size: 13px;
+	background-color:#ECEFF1;
+	border-color: #E0E0E0;
+	color:#607D8B;
+	margin-left: 2px;
+	border-width: 1px;
+	 border-style: solid;
+	}	

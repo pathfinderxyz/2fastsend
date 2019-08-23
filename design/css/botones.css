@@ -1,0 +1,65 @@
+.botondownload {
+	 position:absolute;
+	 left:29%;top:67%;right:59%;
+	 visibility:visible;
+	 height: 39px;
+	 z-index:7;
+	 padding-top: 9px;
+     color:#fafafa;
+     font-size:16pt;
+     font-weight:bold;
+     font-family: calibri; 
+     background-color:#00897B; 
+     text-decoration: none;
+     box-shadow: 1px 2px 3px black;
+}
+  
+.botondownload:link, 
+.botondownload:visited { 
+   border-top: 1px solid #00897B; 
+   border-bottom: 2px solid #00897B; 
+   border-left: 1px solid #00897B; 
+   border-right: 2px solid #00897B; 
+   border-radius: 4px;
+} 
+.botondownload:hover { 
+    border-bottom: 1px solid #00695C; 
+   border-top: 2px solid #00695C; 
+   border-right: 1px solid #00695C; 
+   border-left: 2px solid #00695C;
+   background-color: #00695C; 
+   border-radius: 4px;
+}
+
+.botonpreview {
+	 position:absolute;
+	 left:57%;top:67%;right:31%;
+	 visibility:visible;
+	 height: 39px;
+	 z-index:7;
+	 padding-top: 9px;
+     color:#fafafa;
+     font-size:16pt;
+     font-weight:bold;
+     font-family: calibri; 
+     background-color:#0277BD; 
+     text-decoration: none;
+     box-shadow: 1px 2px 3px black;
+}
+  
+.botonpreview:link, 
+.botonpreview:visited { 
+   border-top: 1px solid #0277BD; 
+   border-bottom: 2px solid #0277BD; 
+   border-left: 1px solid #0277BD; 
+   border-right: 2px solid #0277BD; 
+   border-radius: 4px;
+} 
+.botonpreview:hover { 
+    border-bottom: 1px solid #01579B; 
+   border-top: 2px solid #01579B; 
+   border-right: 1px solid #01579B; 
+   border-left: 2px solid #01579B;
+   background-color:#01579B; 
+   border-radius: 4px;
+}

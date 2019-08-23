@@ -1,0 +1,45 @@
+.redondeado:before {
+	background: transparent url(../images/img_red/arr-der.png) scroll no-repeat top right;
+	margin-bottom: -10px;
+	height: 14px;
+	width: 854px;
+	display: block;
+	border: none;
+	content: url(../images/img_red/arr-izq.png);
+	padding: 0;
+	line-height: 0.1;
+	font-size: 1px;
+}
+
+.redondeado:after {
+	display: block;
+	line-height: 0.1;
+	font-size: 1px;
+	content:  url(../images/img_red/aba-izq.png);
+	margin: 2px 0 0 0;
+	height: 14px;
+	width: 854px;
+	background: transparent url(../images/img_red/aba-der.png) scroll no-repeat bottom right;
+	padding: 0;
+}  
+    
+.redondeado * {
+	padding-left:40%;
+	padding-right: 25px;
+}
+
+.redondeado {
+	padding: 0;
+	background: #993333;
+	color: white;
+	margin-right: -1px;
+}
+
+#triangulo{
+width: 0;
+height: 0;
+border­bottom: 30px solid #55f;
+border­right: 20px solid transparent;
+border­left: 20px solid transparent;
+}
+
