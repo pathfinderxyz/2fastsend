@@ -48,6 +48,10 @@
                 $file = 'ver_registros/historial.php';   
             }elseif ($_GET['page'] == 'consultar') {
                 $file = 'ver_registros/estado_cuenta.php';   
+            }elseif ($_GET['page'] == 'importar') {
+                $file = 'importar/importar.php';   
+            }elseif ($_GET['page'] == 'procesar') {
+                $file = 'importar/procesar.php';   
             }
         }else{
             $file = 'inicio.php';  
@@ -124,14 +128,14 @@
                             $comrep = pg_query("select count(serial) as total2 from comp_enreparacion");
                             $cr = pg_fetch_assoc($comrep);
                         ?>
-                     <!--    <?php  
+                         <!--    <?php  
                                   if ($_SESSION['rol'] == 'admin' || $_SESSION['rol'] == 'bne') {
                                      echo '
                         <li>
                         <a href="?page=registrar" class="mitooltip" title="Registrar" data-placement="top"><i class="fa fa-plus"></i></a>
                         </li>';}
                         ?> -->
-                      <!--
+                        <!--
                        <?php  
                                   if ($_SESSION['rol'] == 'admin' || $_SESSION['rol'] == 'bne' || $_SESSION['rol'] == 'esp') {
                                      echo '
@@ -182,20 +186,41 @@
                             </button>
                         </div>
                         <ul class="nav navbar-nav">
+
+                                  
                         
-                                  <li class="panel panel-default dropdown ">
+                                     <li class="panel panel-default dropdown ">
                                          <a href="?page=home">
                                              <span class="icon glyphicon glyphicon-home"></span><span class="title">Inicio</span>
                                          </a>
                                      </li>
+
+                                     <li class="panel panel-default dropdown">
+                                
+                                       <a data-toggle="collapse" href="#dropdown-cliente">
+                                             <span class="icon glyphicon glyphicon-user"></span><span class="title">Clientes</span>
+                                         </a>
+                                    <!-- Dropdown level 1 -->
+                                         <div id="dropdown-cliente" class="panel-collapse collapse">
+                                         <div class="panel-body">
+                                             <ul class="nav navbar-nav">
+                                                
+                                                 <li><a href="?page=importar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-import"></i>&nbsp;&nbsp;&nbsp;Importar</a>
+                                                 </li> 
+                                                 <li><a href="?page=registrar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;&nbsp;&nbsp;Registro Manual</a>
+                                                 </li> 
+                                                   
+                                          </div>
+                                         </div>
+                                       </li>  
                                  <?php  
                                   if ($_SESSION['rol'] == 'admin') {
                                      echo '<li class="panel panel-default dropdown ">
-                                         <a data-toggle="collapse" href="#dropdown-element">
+                                         <a data-toggle="collapse" href="#dropdown-envios">
                                              <span class="icon glyphicon glyphicon-send"></span><span class="title">Envios</span>
                                          </a>
                                          <!-- Dropdown level 1 -->
-                                         <div id="dropdown-element" class="panel-collapse collapse">
+                                         <div id="dropdown-envios" class="panel-collapse collapse">
                                          <div class="panel-body">
                                              <ul class="nav navbar-nav">
                                                 

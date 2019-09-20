@@ -4,7 +4,7 @@
     /*$id = $_GET['id']; */
 
      
-    $sql = pg_query("SELECT * FROM persona");
+    $sql = pg_query("SELECT * FROM clentes");
     $row1 = pg_fetch_assoc($sql2);
     $row = pg_num_rows($sql);
     
@@ -16,7 +16,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">
-                                    <div class="title">Historial de envíos</div>
+                                    <div class="title">Historial</div>
                                     </div>
                                 </div>
                                 
@@ -35,13 +35,12 @@
                                         <table class="datatable table table-striped" cellspacing="0" width="100%">
                                             <thead color="#000000">
                                                 <tr>
-                                                    <th>No.Guía</th>
-                                                    <th>país origen</th>
-                                                    <th>país destino</th>
+                                                    <th>No. de Guía</th>
+                                                    <th>Nombre</th>
+                                                    <th>Numero de factura</th>
                                                     <th>tipo de envío</th>
-                                                    <th>peso</th>
+                                                    <th>monto</th>
                                                     <th>Fecha</th>
-                                                    <th>monto factura</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -49,11 +48,11 @@
                                                      if ($row) {
                                                          while ($info = pg_fetch_assoc($sql)) {
                                                      echo '<tr>
-                                                             <td>'.$info['cedula'].'</td>
+                                                             <td>'.$info['guia'].'</td>
                                                              <td>'.$info['nombre'].'</td>
-                                                             <td>'.$info['apellido'].'</td>
-                                                             <td>'.$info['municipio'].'</td>
-                                                             <td>'.$info['solicitud'].'</td>
+                                                             <td>'.$info['nfact'].'</td>
+                                                             <td>'.$info['tipo'].'</td>
+                                                             <td>'.$info['pagocliente'].'</td>
                                                              <td>'.$info['fecha'].'</td>                                                 
                                                           </tr>';
                                                          }

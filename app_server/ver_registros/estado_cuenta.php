@@ -4,7 +4,7 @@
     /*$id = $_GET['id']; */
 
      
-    $sql = pg_query("SELECT * FROM persona");
+    $sql = pg_query("SELECT * FROM clentes");
     $row1 = pg_fetch_assoc($sql2);
     $row = pg_num_rows($sql);
     
@@ -36,7 +36,7 @@
                                             <thead color="#000000">
                                                 <tr>
                                                     <th>No. de Guía</th>
-                                                    <th>Factura</th>
+                                                    <th>Nombre</th>
                                                     <th>Numero de factura</th>
                                                     <th>tipo de envío</th>
                                                     <th>monto</th>
@@ -48,11 +48,11 @@
                                                      if ($row) {
                                                          while ($info = pg_fetch_assoc($sql)) {
                                                      echo '<tr>
-                                                             <td>'.$info['cedula'].'</td>
+                                                             <td>'.$info['guia'].'</td>
                                                              <td>'.$info['nombre'].'</td>
-                                                             <td>'.$info['apellido'].'</td>
-                                                             <td>'.$info['municipio'].'</td>
-                                                             <td>'.$info['solicitud'].'</td>
+                                                             <td>'.$info['nfact'].'</td>
+                                                             <td>'.$info['tipo'].'</td>
+                                                             <td>'.$info['pagocliente'].'</td>
                                                              <td>'.$info['fecha'].'</td>                                                 
                                                           </tr>';
                                                          }
