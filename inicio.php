@@ -260,6 +260,29 @@
                                              <span class="icon glyphicon glyphicon-object-align-left"></span><span class="title">Estado de cuenta</span>
                                          </a>
                             </li>
+
+
+                              
+
+                                     <li class="panel panel-default dropdown">
+                                
+                                       <a data-toggle="collapse" href="#dropdown-cliente">
+                                             <span class="icon glyphicon glyphicon-user"></span><span class="title">Usuarios</span>
+                                         </a>
+                                    <!-- Dropdown level 1 -->
+                                         <div id="dropdown-cliente" class="panel-collapse collapse">
+                                         <div class="panel-body">
+                                             <ul class="nav navbar-nav">
+                                                
+                                                 <li><a href="?page=importar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-import"></i>&nbsp;Crear Usuario</a>
+                                                 </li> 
+                                                 <li><a href="?page=registrar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;&nbsp;&nbsp;Eliminar usuario</a>
+                                                 </li> 
+                                                   
+                                          </div>
+                                         </div>
+                                       </li> 
+                            
                             
                     
                              
