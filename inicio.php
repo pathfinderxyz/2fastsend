@@ -52,6 +52,8 @@
                 $file = 'importar/importar.php';   
             }elseif ($_GET['page'] == 'procesar') {
                 $file = 'importar/procesar.php';   
+            }elseif ($_GET['page'] == 'procesar') {
+                $file = 'importar/procesar.php';   
             }
         }else{
             $file = 'inicio.php';  
@@ -266,17 +268,17 @@
 
                                      <li class="panel panel-default dropdown">
                                 
-                                       <a data-toggle="collapse" href="#dropdown-cliente">
-                                             <span class="icon glyphicon glyphicon-user"></span><span class="title">Usuarios</span>
+                                       <a data-toggle="collapse" href="#dropdown-user">
+                                             <span class="icon glyphicon glyphicon-eye-open"></span><span class="title">Usuarios</span>
                                          </a>
                                     <!-- Dropdown level 1 -->
-                                         <div id="dropdown-cliente" class="panel-collapse collapse">
+                                         <div id="dropdown-user" class="panel-collapse collapse">
                                          <div class="panel-body">
                                              <ul class="nav navbar-nav">
                                                 
-                                                 <li><a href="?page=importar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-import"></i>&nbsp;Crear Usuario</a>
+                                                 <li><a href="?page=usuarios">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;Crear Usuario</a>
                                                  </li> 
-                                                 <li><a href="?page=registrar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;&nbsp;&nbsp;Eliminar usuario</a>
+                                                 <li><a href="?page=registrar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Editar usuario</a>
                                                  </li> 
                                                    
                                           </div>
