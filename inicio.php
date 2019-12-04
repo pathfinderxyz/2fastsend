@@ -52,8 +52,10 @@
                 $file = 'importar/importar.php';   
             }elseif ($_GET['page'] == 'procesar') {
                 $file = 'importar/procesar.php';   
-            }elseif ($_GET['page'] == 'procesar') {
-                $file = 'importar/procesar.php';   
+            }elseif ($_GET['page'] == 'usuarios') {
+                $file = 'usuarios/registrar.php';   
+            }elseif ($_GET['page'] == 'editar_user') {
+                $file = 'usuarios/editar.php';   
             }
         }else{
             $file = 'inicio.php';  
@@ -278,7 +280,7 @@
                                                 
                                                  <li><a href="?page=usuarios">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;Crear Usuario</a>
                                                  </li> 
-                                                 <li><a href="?page=registrar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Editar usuario</a>
+                                                 <li><a href="?page=editar_user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Editar usuario</a>
                                                  </li> 
                                                    
                                           </div>
