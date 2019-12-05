@@ -52,10 +52,10 @@
                 $file = 'importar/importar.php';   
             }elseif ($_GET['page'] == 'procesar') {
                 $file = 'importar/procesar.php';   
-            }elseif ($_GET['page'] == 'usuarios') {
-                $file = 'usuarios/registrar.php';   
+            }elseif ($_GET['page'] == 'user_plus') {
+                $file = 'user/registrar_user.php';   
             }elseif ($_GET['page'] == 'editar_user') {
-                $file = 'usuarios/editar.php';   
+                $file = 'user/registrar_user.php';   
             }
         }else{
             $file = 'inicio.php';  
@@ -278,7 +278,7 @@
                                          <div class="panel-body">
                                              <ul class="nav navbar-nav">
                                                 
-                                                 <li><a href="?page=usuarios">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;Crear Usuario</a>
+                                                 <li><a href="?page=user_plus">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-plus"></i>&nbsp;Crear Usuario</a>
                                                  </li> 
                                                  <li><a href="?page=editar_user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Editar usuario</a>
                                                  </li> 
