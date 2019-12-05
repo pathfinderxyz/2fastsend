@@ -55,7 +55,7 @@
             }elseif ($_GET['page'] == 'user_plus') {
                 $file = 'user/registrar_user.php';   
             }elseif ($_GET['page'] == 'editar_user') {
-                $file = 'user/registrar_user.php';   
+                $file = 'user/editar_user.php';   
             }
         }else{
             $file = 'inicio.php';  

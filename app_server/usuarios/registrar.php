@@ -41,13 +41,13 @@
                                     <form action="app_server/usuarios/registrarphp.php" method="post">
                                       
                                         <div class="form-group">
-                                            <label for="cedula">Ingrese Cedula de Identidad</label>
-                                            <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Cedula del Encargado" required="">
+                                            <label for="cedula">Ingrese Numero de guia</label>
+                                            <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Numero de guia" required="">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="nombre">Ingrese Nombre</label>
-                                            <input type="text" class="form-control" name="nombre" placeholder="Nombre del Encargado" required="">
+                                            <input type="text" class="form-control" name="nombre" placeholder="Nombre del cliente" required="">
                                         </div>
                                         
                                         <div class="form-group">
@@ -63,24 +63,9 @@
                                         <select class="form-control" name="rol" id="rol" required="">
                                                 
                                                <option value=""></option>
-                                               <option value="Bienes">Bienes Nacionales</option>
-                                               <option value="Especialista">Especialista</option>
-                                               <option value="Informatica">Unidad de Informatica</option> 
-                                               <option value="Estadistica">Unidad de Estadistica</option>
-                                               <option value="Administracion">Unidad de Administracion</option>
-                                                <option value="Contaduria">Unidad de Contaduria</option>
-                                               <option value="Hoteleria">Unidad de Hoteleria y Turismo</option>
-                                                <option value="Admon hoteleras">Unidad de T.S.U de Empresas Hoteleras</option>
-                                                <option value="Turismo">Unidad de Turismo</option>
-                                                <option value="Educacion">Unidad de Educacion</option>
-                                                <option value="Cursos Basicos">Unidad de Cursos Basicos</option>
-                                                <option value="Ciencias">Unidad de Ciencias</option>
-                                                 <option value="Socio Humanidades">Unidad de SocioHumanidades</option>
-                                                 <option value="Desarrollo">Unidad de Desarrollo Estudiantil</option>
-                                                 <option value="Acuicultura">Unidad de Acuicultura</option>
-                                                 <option value="Biologia">Unidad de Biologia MArina</option>
-                                                 <option value="Deportes">Unidad de Deportes</option>
-                                                 <option value="Enfermeria">Unidad de Enfermeria</option>
+                                               <option value="cliente">cliente</option>
+                                               <option value="administrador">Administrador</option>
+                                               <option value="empleados">empleados</option>                                                
                                                  
                                         </select>
                                         </div>
