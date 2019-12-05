@@ -37,7 +37,7 @@
             }elseif ($_GET['page'] == 'enviostransito') {
                 $file = 'ver_registros/ver.php';   
             }elseif ($_GET['page'] == 'buscar') {
-                $file = 'buscar/consultar.php';   
+                $file = 'buscar/tracking_vista.php';   
             }elseif ($_GET['page'] == 'update') {
                 $file = 'actualizar/update.php';   
             }elseif ($_GET['page'] == 'update2') {
