@@ -56,6 +56,8 @@
                 $file = 'user/registrar_user.php';   
             }elseif ($_GET['page'] == 'editar_user') {
                 $file = 'user/editar_user.php';   
+            }elseif ($_GET['page'] == 'tracking') {
+                $file = 'dhl/getTracking.html';   
             }
         }else{
             $file = 'inicio.php';  
@@ -228,7 +230,7 @@
                                          <div class="panel-body">
                                              <ul class="nav navbar-nav">
                                                 
-                                                 <li><a href="http://fast2send.com/tracking/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-search"></i>&nbsp;&nbsp;&nbsp;tracking</a>
+                                                 <li><a href="?page=tracking/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-search"></i>&nbsp;&nbsp;&nbsp;tracking</a>
                                                  </li> 
                                                  <li><a href="?page=enviostransito">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon glyphicon glyphicon-sort"></i>&nbsp;&nbsp;&nbsp;Envíos en transito</a>
                                                  </li>   
