@@ -254,7 +254,7 @@
 
                             <li class="panel panel-default dropdown">
                                 
-                                    <a href="http://fast2send.com/cotizar/"><span class="icon glyphicon glyphicon-list-alt"></span><span class="title">Cotizador</span></a>
+                                    <a href="http://fast2send.com/cotizador/"><span class="icon glyphicon glyphicon-list-alt"></span><span class="title">Cotizador</span></a>
                                 
                                 
                             </li>';
