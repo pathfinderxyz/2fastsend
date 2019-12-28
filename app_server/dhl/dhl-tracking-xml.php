@@ -13,8 +13,8 @@
        $modal  = ($_REQUEST['modal']!=0)?'ALL_CHECK_POINTS':$modal;
      }
       
-    $siteID  = 'v62_OjYFmvBMpl';
-    $pwd     = 'pK0YR8D1Xs';
+    $siteID  = 'v62_fcxIADAUQJ';
+    $pwd     = 'GqPeiIjc6E';
     
     $xml_req = 
     '<req:KnownTrackingRequest xmlns:req="http://www.dhl.com" 
@@ -34,7 +34,7 @@
     <LevelOfDetails>'.$modal.'</LevelOfDetails>
     </req:KnownTrackingRequest>';  
 
-     $URL = 'https://xmlpitest-ea.dhl.com/XMLShippingServlet'; 
+     $URL = 'https://xmlpi-ea.dhl.com/XMLShippingServlet'; 
 
      $ch = curl_init();
 

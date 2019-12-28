@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <title>Ejemplo de Busqueda por Tracking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <body>
 <div class="container">
@@ -6,14 +22,14 @@
     <div>
       <h2>Estatus de mi paquete</h2>
       <input type="search" id="billNumber" name="billNumber" >
-      <button type="button" class="btn btn-primary" onclick="loadTrackingStatus()">Get Tracking</button>
+      <button type="button" onclick="loadTrackingStatus()">Get Tracking</button>
     </div>
    </form>
  </div>
  <div class="row">
-   <div> <h2>Lista de Eventos</h2> </div>
+   <div> <h3>Lista de Eventos</h3> </div>
    <div>
-     <p>
+     <p style="color:#ffffff;">
        A continuacion se listan los eventos relacionados al envío...!            
      </p>
    </div>
@@ -133,11 +149,11 @@ function buildTable(element,value){
           '<thead>'+
           '<tr>'+
           '  <th scope="col">#</th>'+
+          '  <th scope="col">Code</th>'+
           '  <th scope="col">Fecha</th>'+
-          '  <th scope="col">Hora </th>'+
           '  <th scope="col">Zona </th>'+
           '  <th scope="col">Nombre del Area</th>'+
-          '  <th scope="col">Code</th>'+
+          '  <th scope="col">Hora </th>'+
           '  <th scope="col">Descripcion</th>'+
           '</tr>';      
           '<tbody>'+
@@ -161,4 +177,4 @@ function buildTable(element,value){
 </script>
 
 </body>
-
+</html>
