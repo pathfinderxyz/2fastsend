@@ -5,8 +5,8 @@
   if (isset( $_REQUEST['idship'])) { 
 
      $idship = $_REQUEST['idship'];
-     $siteID  = 'v62_OjYFmvBMpl';
-     $pwd     = 'pK0YR8D1Xs';
+     $siteID  = 'v62_fcxIADAUQJ';
+     $pwd     = 'GqPeiIjc6E';
      $xml_req = 
      '<req:KnownTrackingRequest xmlns:req="http://www.dhl.com" 
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -25,7 +25,7 @@
     <LevelOfDetails>ALL_CHECK_POINTS</LevelOfDetails>
     </req:KnownTrackingRequest>';  
 
-    $URL = 'https://xmlpitest-ea.dhl.com/XMLShippingServlet'; 
+    $URL = 'https://xmlpi-ea.dhl.com/XMLShippingServlet'; 
     //setting the curl parameters.
      $ch = curl_init();
 
